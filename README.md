@@ -12,6 +12,7 @@ This application should be run on a physical Android device to take advantage of
 
 ### Demo on Innocomm SC51
 ![Object Detection Demo1](mediapipe001.png?raw=true "Object Detection Demo1") 
+![Object Detection Demo2](mediapipe002.gif?raw=true "Object Detection Demo2") 
 ![Object Detection Demo3](mediapipe003.png?raw=true "Object Detection Demo3")
 ![Object Detection Demo4](mediapipe004.png?raw=true "Object Detection Demo4")
 
