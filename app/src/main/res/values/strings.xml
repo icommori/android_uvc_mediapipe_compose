@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UVC-MediaPipe Object Detection</string>
+    <string name="previewlist">Preview Size</string>
+</resources>
