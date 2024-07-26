@@ -46,3 +46,9 @@ This application should be run on a physical Android device to take advantage of
 
 Downloading, extraction, and placing the models into the _assets_ folder is
 managed automatically by the **download.gradle** file.
+
+### Reference
+
+https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/object_detection/android
+
+https://github.com/shanerodrigues/compose-uvc-camera/tree/main
