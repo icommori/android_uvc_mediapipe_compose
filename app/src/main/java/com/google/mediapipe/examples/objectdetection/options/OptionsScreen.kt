@@ -35,6 +35,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.mediapipe.examples.objectdetection.R
@@ -276,9 +277,9 @@ fun OptionsScreen(
             )
             Text(
                 text = when (mlModel) {
-                    ObjectDetectorHelper.MODEL_EFFICIENTDETV0 -> "EfficientDet Lite0"
-                    ObjectDetectorHelper.MODEL_EFFICIENTDETV2 -> "EfficientDet Lite2"
-                    ObjectDetectorHelper.MODEL_MOBILENETV1 -> "MobileNet V1"
+                    ObjectDetectorHelper.MODEL_EFFICIENTDETV0 -> stringResource(id = R.string.model_efficentdetv0)
+                    ObjectDetectorHelper.MODEL_EFFICIENTDETV2 -> stringResource(id = R.string.model_efficentdetv2)
+                    ObjectDetectorHelper.MODEL_MOBILENETV2 -> stringResource(id = R.string.model_mobilenetv2)
                     else -> "NONE"
                 },
             )
@@ -297,23 +298,23 @@ fun OptionsScreen(
                     onDismissRequest = { mlModelDropdownExpanded.value = false },
                 ) {
                     DropdownMenuItem(
-                        text = { Text(text = "EfficientDet Lite0") },
+                        text = { Text(text = stringResource(id = R.string.model_efficentdetv0)) },
                         onClick = {
                             setMlModel(ObjectDetectorHelper.MODEL_EFFICIENTDETV0)
                             mlModelDropdownExpanded.value = false
                         },
                     )
                     DropdownMenuItem(
-                        text = { Text(text = "EfficientDet Lite2") },
+                        text = { Text(text = stringResource(id = R.string.model_efficentdetv2)) },
                         onClick = {
                             setMlModel(ObjectDetectorHelper.MODEL_EFFICIENTDETV2)
                             mlModelDropdownExpanded.value = false
                         },
                     )
                     DropdownMenuItem(
-                        text = { Text(text = "MobileNet V1") },
+                        text = { Text(text = stringResource(id = R.string.model_mobilenetv2)) },
                         onClick = {
-                            setMlModel(ObjectDetectorHelper.MODEL_MOBILENETV1)
+                            setMlModel(ObjectDetectorHelper.MODEL_MOBILENETV2)
                             mlModelDropdownExpanded.value = false
                         },
                     )

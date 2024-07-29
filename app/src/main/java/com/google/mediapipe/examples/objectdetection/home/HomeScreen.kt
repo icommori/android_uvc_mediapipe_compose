@@ -157,9 +157,9 @@ fun HomeScreen(
                 Text(text = ", ")
                 Text(
                     text = when (mlModel) {
-                        ObjectDetectorHelper.MODEL_EFFICIENTDETV0 -> "EfficientDet Lite0"
-                        ObjectDetectorHelper.MODEL_EFFICIENTDETV2 -> "EfficientDet Lite2"
-                        ObjectDetectorHelper.MODEL_MOBILENETV1 -> "MobileNet V1"
+                        ObjectDetectorHelper.MODEL_EFFICIENTDETV0 -> stringResource(id = R.string.model_efficentdetv0)
+                        ObjectDetectorHelper.MODEL_EFFICIENTDETV2 -> stringResource(id = R.string.model_efficentdetv2)
+                        ObjectDetectorHelper.MODEL_MOBILENETV2 ->  stringResource(id = R.string.model_mobilenetv2)
                         else -> "NONE"
                     }
                 )

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">UVC-MediaPipe Object Detection</string>
     <string name="previewlist">Preview Size</string>
+    <string name="model_efficentdetv0">EfficientDet Lite0</string>
+    <string name="model_efficentdetv2">EfficientDet Lite2</string>
+    <string name="model_mobilenetv2">MobileNet V2</string>
 </resources>
